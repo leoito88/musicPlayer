@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cuadrado" style="--i:0"></div>
+
+    <div class="cuadrado"style="--i:1"></div>
+
+    <div class="container">
+        <div class="image-container">
+                <img src="./img/song1.jpg" alt="Cover">
+        </div>
+
+        <h2 id="titulo">Título de la canción</h2>
+
+        <h3 id="artista">Artista</h3>
+
+        <audio src="./music/song1.mp3"></audio>
+
+        <div class="progressBar" id="progressBar">
+            <div class="progress" id="progress"></div>
+            <div class="duration">
+                <span id="tiempoActual">0:00</span>
+                <span id="tiempoDuracion">3:00</span>
+            </div>
+        </div>
+
+        <div class="controles">
+            <ion-icon name="play-back" id="prev"></ion-icon>
+            <ion-icon name="play" id="play"></ion-icon>
+            <ion-icon name="play-forward" id="next"></ion-icon>
+        </div>
+    </div>
+
+    <div class="made"><a href="https://www.github.com/leoito88"><h3>Leandro Rojano</h3></a></div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
